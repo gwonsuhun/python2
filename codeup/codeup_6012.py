@@ -1,0 +1,6 @@
+a = input("나이를 입력하세요")
+a = int(a)
+b = input("생년월일을 입력하세요 ex)930226")
+b = int(b)
+print(a)
+print(b)
