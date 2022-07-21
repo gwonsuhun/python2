@@ -1,7 +1,12 @@
 import sys
 
 sys.stdin = open("2072.txt", "r")
-
-num1, num2, num3 = map(int, input("정수 세 개 입력> ").split())
+t = int(input())
  
-print("{} + {} + {} = {}".format(num1, num2, num3, num1+num2+num3))
+for test_case in range(1,t+1):
+    li = map(int, input().split())
+    answer = 0
+    for i in li:
+        if i%2!=0:
+            answer += i
+    print("#"+str(test_case),str(answer))
